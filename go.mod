@@ -1,9 +1,10 @@
-module github.com/itchyny/gojq
+module github.com/mauricioscastro/gojq
 
 go 1.19
 
 require (
 	github.com/google/go-cmp v0.5.4
+	github.com/itchyny/gojq v0.12.13
 	github.com/itchyny/timefmt-go v0.1.5
 	github.com/mattn/go-isatty v0.0.19
 	github.com/mattn/go-runewidth v0.0.14
