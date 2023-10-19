@@ -16,4 +16,4 @@ require (
 	golang.org/x/sys v0.8.0 // indirect
 )
 
-replace github.com/itchyny/gojq v0.12.13 => github.com/mauricioscastro/gojq v0.12.130
+replace github.com/itchyny/gojq v0.12.13 => github.com/mauricioscastro/gojq v0.12.131
