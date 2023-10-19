@@ -1,6 +1,9 @@
 package cli
 
-import "os"
+import (
+	"io"
+	"os"
+)
 
 // Run gojq.
 func Run() int {
@@ -9,4 +12,12 @@ func Run() int {
 		outStream: os.Stdout,
 		errStream: os.Stderr,
 	}).run(os.Args[1:])
+}
+
+func CmdRun(in io.Reader, out io.Writer, err io.Writer, args []string) int {
+	return (&cli{
+		inStream:  in,
+		outStream: out,
+		errStream: err,
+	}).run(args)
 }

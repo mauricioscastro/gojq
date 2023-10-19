@@ -14,3 +14,5 @@ require (
 	github.com/rivo/uniseg v0.4.4 // indirect
 	golang.org/x/sys v0.8.0 // indirect
 )
+
+replace github.com/itchyny/gojq v0.12.13 => github.com/mauricioscastro/gojq v0.12.13
